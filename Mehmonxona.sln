@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Tests", "Mehmonxona.Tests\Mehmonxona.Tests.csproj", "{B1200DDB-5E77-4501-8406-0D7E24597AC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.ConsoleApp", "Mehmonxona.Tests\Mehmonxona.ConsoleApp.csproj", "{B1200DDB-5E77-4501-8406-0D7E24597AC6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Data", "Mehmonxona.Data\Mehmonxona.Data.csproj", "{9CB057B2-EB48-4A6D-A7BA-9206EBBBCC0F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Domain", "Mehmonxona.Domain\Mehmonxona.Domain.csproj", "{BAE7A81C-F934-4046-B8B3-1931D1A2B3B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mehmonxona.Service", "Mehmonxona.Service\Mehmonxona.Service.csproj", "{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Service", "Mehmonxona.Service\Mehmonxona.Service.csproj", "{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

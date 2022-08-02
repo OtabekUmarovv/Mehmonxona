@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\otaxo\\.nuget\\packages\\": {}
+    "C:\\Users\\99893\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
-      "projectName": "Mehmonxona.Tests",
-      "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
-      "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Tests\\obj\\",
+      "projectUniqueName": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.ConsoleApp.csproj",
+      "projectName": "Mehmonxona.ConsoleApp",
+      "projectPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\99893\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\99893\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,16 @@
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.ConsoleApp.exe
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.ConsoleApp.deps.json
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.ConsoleApp.runtimeconfig.json
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.ConsoleApp.runtimeconfig.dev.json
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.ConsoleApp.dll
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.ConsoleApp.pdb
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.csproj.AssemblyReference.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.AssemblyInfoInputs.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.AssemblyInfo.cs
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.csproj.CoreCompileInputs.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.dll
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\refint\Mehmonxona.ConsoleApp.dll
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.pdb
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.ConsoleApp.genruntimeconfig.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\ref\Mehmonxona.ConsoleApp.dll

@@ -1,0 +1,12 @@
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\bin\Debug\net5.0\Mehmonxona.Domain.deps.json
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\bin\Debug\net5.0\Mehmonxona.Domain.dll
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\bin\Debug\net5.0\Mehmonxona.Domain.pdb
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.csproj.AssemblyReference.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.AssemblyInfoInputs.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.AssemblyInfo.cs
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.dll
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\refint\Mehmonxona.Domain.dll
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.pdb
+E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\ref\Mehmonxona.Domain.dll
