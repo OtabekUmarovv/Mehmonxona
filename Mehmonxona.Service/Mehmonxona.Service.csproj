@@ -4,4 +4,15 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\Employees\" />
+    <Folder Include="DTOs\Conferences\" />
+    <Folder Include="DTOs\Clients\" />
+    <Folder Include="DTOs\Orders\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
