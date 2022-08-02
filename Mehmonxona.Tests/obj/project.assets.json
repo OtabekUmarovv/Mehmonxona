@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.ConsoleApp.csproj",
-      "projectName": "Mehmonxona.ConsoleApp",
-      "projectPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.ConsoleApp.csproj",
+      "projectUniqueName": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
+      "projectName": "Mehmonxona.Tests",
+      "projectPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
       "packagesPath": "C:\\Users\\99893\\.nuget\\packages\\",
       "outputPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\obj\\",
       "projectStyle": "PackageReference",
