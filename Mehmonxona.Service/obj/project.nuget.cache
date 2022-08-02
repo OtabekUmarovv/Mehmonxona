@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "59qMm0PhjQ+DjkFKbh82zwYKub7gw0hlmr1PyUNCp7Z7neLPqfdA4qh0vCOg3FseduBIjD9q+foys1znQsACZQ==",
+=======
+  "dgSpecHash": "xImUMKTC2Pp8BLLcUEGazi5Cry4FgkM5xpa5w0hwfw90M0SADTrdMQfiD3+uGTkuYSVCqkfuEfOjuAc+7ffkwA==",
+>>>>>>> 0ab45ed7a775f8246074cf028f055dad47e6cd9d
   "success": true,
   "projectFilePath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
   "expectedPackageFiles": [],

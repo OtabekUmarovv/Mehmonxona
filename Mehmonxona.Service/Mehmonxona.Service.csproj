@@ -5,12 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="DTOs\Employees\" />
     <Folder Include="DTOs\Conferences\" />
     <Folder Include="DTOs\Clients\" />
     <Folder Include="DTOs\Orders\" />
+=======
+    <Folder Include="Extensions\" />
+    <Folder Include="Interfaces\" />
+>>>>>>> 0ab45ed7a775f8246074cf028f055dad47e6cd9d
     <Folder Include="Mappers\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mehmonxona.Domain\Mehmonxona.Domain.csproj" />
   </ItemGroup>
 
 </Project>

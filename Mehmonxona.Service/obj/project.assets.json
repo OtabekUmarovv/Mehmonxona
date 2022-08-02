@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Mehmonxona.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Mehmonxona.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mehmonxona.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Mehmonxona.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Mehmonxona.Domain/Mehmonxona.Domain.csproj",
+      "msbuildProject": "../Mehmonxona.Domain/Mehmonxona.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Mehmonxona.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\otaxo\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+              "projectPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
