@@ -15,7 +15,7 @@ namespace Mehmonxona.Data.Repositories
 
         public GenericRepository()
         {
-                dbContext = new MehmonxonaDbContext();
+            dbContext = new MehmonxonaDbContext();
         }
 
         public async Task<TEntity> CreateAsync(TEntity entity)
