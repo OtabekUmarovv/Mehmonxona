@@ -1,0 +1,16 @@
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.Tests.exe
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.Tests.deps.json
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.Tests.runtimeconfig.json
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.Tests.runtimeconfig.dev.json
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.Tests.dll
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\bin\Debug\net5.0\Mehmonxona.Tests.pdb
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.csproj.AssemblyReference.cache
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.AssemblyInfoInputs.cache
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.AssemblyInfo.cs
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.csproj.CoreCompileInputs.cache
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.dll
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\refint\Mehmonxona.Tests.dll
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.pdb
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\Mehmonxona.Tests.genruntimeconfig.cache
+C:\Users\otaxo\source\repos\Mehmonxona\Mehmonxona.Tests\obj\Debug\net5.0\ref\Mehmonxona.Tests.dll
