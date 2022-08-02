@@ -10,7 +10,7 @@ namespace Mehmonxona.Data.Contexts
 {
     public class MehmonxonaDbContext : DbContext
     {
-        const string connectionString = "Server=127.0.0.1;Port=5432;Database=Mehmonxona;Username=postgres;Password=postmiddle";
+        const string connectionString = "Server=127.0.0.1;Port=5432;Database=Mehmonxona;Username=postgres;Password=";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql(connectionString);
