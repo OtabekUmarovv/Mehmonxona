@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mehmonxona.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,18 +8,15 @@ using System.Threading.Tasks;
 
 namespace Mehmonxona.Service.DTOs.Orders
 {
-    public class OrderForCreationDto
+    public class Payment
     {
         [Required]
-        public long EmployeeId { get; set; }
+        public PaymentType Type { get; set; }
 
         [Required]
-        public long ClientId { get; set; }
+        public decimal Amount { get; set; }
 
         [Required]
-        public long RoomId { get; set; }
-
-        [Required]
-        public long PaymentId { get; set; }
+        public long OrderId { get; set; }
     }
 }

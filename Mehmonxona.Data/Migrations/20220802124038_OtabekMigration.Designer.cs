@@ -3,15 +3,17 @@ using System;
 using Mehmonxona.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Mehmonxona.Data.Migrations
 {
     [DbContext(typeof(MehmonxonaDbContext))]
-    partial class MehmonxonaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220802124038_OtabekMigration")]
+    partial class OtabekMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

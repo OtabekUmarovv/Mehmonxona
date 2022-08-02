@@ -53,8 +53,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
-              "projectPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
+            "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+              "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
             }
           }
         }

@@ -10,3 +10,15 @@ E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehm
 E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\refint\Mehmonxona.Domain.dll
 E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.pdb
 E:\Projects\Consol\Mehmonxona\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\ref\Mehmonxona.Domain.dll
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\bin\Debug\net5.0\Mehmonxona.Domain.deps.json
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\bin\Debug\net5.0\Mehmonxona.Domain.dll
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\bin\Debug\net5.0\Mehmonxona.Domain.pdb
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.csproj.AssemblyReference.cache
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.AssemblyInfoInputs.cache
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.AssemblyInfo.cs
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.csproj.CoreCompileInputs.cache
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.dll
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\refint\Mehmonxona.Domain.dll
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\Mehmonxona.Domain.pdb
+C:\Users\otaxo\Source\Repos\Mehmonxona\Mehmonxona.Domain\obj\Debug\net5.0\ref\Mehmonxona.Domain.dll

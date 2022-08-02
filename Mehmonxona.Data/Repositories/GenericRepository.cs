@@ -11,45 +11,45 @@ namespace Mehmonxona.Data.Repositories
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        MehmonxonaDbContext dbContext;
+        protected readonly  MehmonxonaDbContext _context;
+        protected readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository()
         {
-            dbContext = new MehmonxonaDbContext();
+            this._context = new MehmonxonaDbContext();
+            this._dbSet = _context.Set<TEntity>();
         }
 
+
+
         public async Task<TEntity> CreateAsync(TEntity entity)
-        {
-            TEntity source = dbContext.Set<TEntity>().Add(entity).Entity;
-            await dbContext.SaveChangesAsync();
-            return source;
-        }
+            => (await _dbSet.AddAsync(entity)).Entity;
 
         public async Task<bool> DeleteAsync(Expression<Func<TEntity, bool>> expression)
         {
-            TEntity entity = await GetAsync(expression);
+            var entity = await _dbSet.FirstOrDefaultAsync(expression);
 
             if (entity is null)
                 return false;
 
-            dbContext.Set<TEntity>().Remove(entity);
-            await dbContext.SaveChangesAsync();
+            _dbSet.Remove(entity);
 
             return true;
         }
 
-        public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> expression = null)
-            => expression is null ? dbContext.Set<TEntity>() : dbContext.Set<TEntity>().Where(expression);
 
-        public async Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> expression)
-            => await dbContext.Set<TEntity>().FirstOrDefaultAsync(expression);
+        public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> expression)
+            => expression is null ? _dbSet : _dbSet.Where(expression);
 
-        public async Task<TEntity> UpdateAsync(TEntity entity)
-        {
-            TEntity source = dbContext.Update(entity).Entity;
-            await dbContext.SaveChangesAsync();
 
-            return source;
-        }
+        public Task<TEntity?> GetAsync(Expression<Func<TEntity, bool>> expression)
+            => _dbSet.FirstOrDefaultAsync(expression);
+
+        public Task SaveChangesAsync() => _context.SaveChangesAsync();
+
+        public void Dispose() => GC.SuppressFinalize(this);
+
+        public TEntity Update(TEntity entity)
+            => _dbSet.Update(entity).Entity;
     }
 }
