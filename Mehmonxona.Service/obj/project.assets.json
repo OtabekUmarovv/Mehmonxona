@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\99893\\.nuget\\packages\\": {}
+    "C:\\Users\\otaxo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
+      "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
       "projectName": "Mehmonxona.Service",
-      "projectPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
-      "packagesPath": "C:\\Users\\99893\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Consol\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\obj\\",
+      "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
+      "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\99893\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
