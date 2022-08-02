@@ -17,8 +17,4 @@
     <ProjectReference Include="..\Mehmonxona.Domain\Mehmonxona.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Constants\" />
-  </ItemGroup>
-
 </Project>
