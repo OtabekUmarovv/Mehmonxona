@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {}
+    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {}
   },
   "projects": {
-    "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
+    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
         "projectName": "Mehmonxona.Data",
-        "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
-        "packagesPath": "C:\\Users\\shakh\\.nuget\\packages\\",
-        "outputPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Data\\obj\\",
+        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
+        "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\shakh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
-                "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
+              "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+                "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
               }
             }
           }
@@ -65,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,21 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
         "projectName": "Mehmonxona.Domain",
-        "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
-        "packagesPath": "C:\\Users\\shakh\\.nuget\\packages\\",
-        "outputPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\obj\\",
+        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
+        "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\shakh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,8 +119,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -130,21 +128,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {
+    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
         "projectName": "Mehmonxona.Service",
-        "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
-        "packagesPath": "C:\\Users\\shakh\\.nuget\\packages\\",
-        "outputPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Service\\obj\\",
+        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
+        "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\shakh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,11 +156,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
-                "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj"
+              "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
+                "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj"
               },
-              "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
-                "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
+              "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+                "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
               }
             }
           }
@@ -192,8 +190,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -202,7 +199,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

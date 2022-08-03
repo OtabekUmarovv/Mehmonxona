@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\shakh\\.nuget\\packages\\": {}
+    "C:\\Users\\otaxo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
       "projectName": "Mehmonxona.Tests",
-      "projectPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
-      "packagesPath": "C:\\Users\\shakh\\.nuget\\packages\\",
-      "outputPath": "D:\\Mehmonxona\\Mehmonxona\\Mehmonxona.Tests\\obj\\",
+      "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Tests\\Mehmonxona.Tests.csproj",
+      "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\shakh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,8 +51,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -61,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400-preview.22330.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
