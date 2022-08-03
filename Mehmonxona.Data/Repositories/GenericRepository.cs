@@ -45,10 +45,6 @@ namespace Mehmonxona.Data.Repositories
         public Task<TEntity?> GetAsync(Expression<Func<TEntity, bool>> expression)
             => _dbSet.FirstOrDefaultAsync(expression);
 
-        public Task SaveChangesAsync() => _context.SaveChangesAsync();
-
-        public void Dispose() => GC.SuppressFinalize(this);
-
         public TEntity Update(TEntity entity)
             => _dbSet.Update(entity).Entity;
     }

@@ -11,10 +11,10 @@ namespace Mehmonxona.Service.Interfaces
 {
     public interface IOrderService
     {
-        Task<Order> CreateAsync(OrderForCreationDto roomForCreation);
-        Task<Order> UpdateAsync(long id, OrderForCreationDto roomForCreation);
+        Task<OrderForViewModel> CreateAsync(OrderForCreationDto roomForCreation);
+        Task<OrderForViewModel> UpdateAsync(long id, OrderForCreationDto roomForCreation);
         Task<bool> DeleteAsync(Expression<Func<Order, bool>> expressions);
-        Task<Order> GetAsync(Expression<Func<Order, bool>> expression);
-        Task<IEnumerable<Order>> GetAllAsync(Expression<Func<Order, bool>>? expression = null, Tuple<int, int>? pagination = null);
+        Task<OrderForViewModel> GetAsync(Expression<Func<Order, bool>> expression);
+        Task<IEnumerable<OrderForViewModel>> GetAllAsync(Expression<Func<Order, bool>>? expression = null, Tuple<int, int>? pagination = null);
     }
 }

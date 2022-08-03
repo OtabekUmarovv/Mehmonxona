@@ -11,10 +11,10 @@ namespace Mehmonxona.Service.Interfaces
 {
     public interface IClientService
     {
-        Task<ClientForCreationDto> CreateAsync(ClientForCreationDto roomForCreation);
-        Task<ClientForCreationDto> UpdateAsync(long id, ClientForCreationDto roomForCreation);
+        Task<ClientForViewModel> CreateAsync(ClientForCreationDto roomForCreation);
+        Task<ClientForViewModel> UpdateAsync(long id, ClientForCreationDto roomForCreation);
         Task<bool> DeleteAsync(Expression<Func<Client, bool>> expressions);
-        Task<ClientForCreationDto> GetAsync(Expression<Func<Client, bool>> expression);
-        Task<IEnumerable<ClientForCreationDto>> GetAllAsync(Expression<Func<Client, bool>>? expression = null, Tuple<int, int>? pagination = null);
+        Task<ClientForViewModel> GetAsync(Expression<Func<Client, bool>> expression);
+        Task<IEnumerable<ClientForViewModel>> GetAllAsync(Expression<Func<Client, bool>>? expression = null, Tuple<int, int>? pagination = null);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Mehmonxona.Domain.Entities.Orders;
+using Mehmonxona.Service.DTOs.Orders;
 using Mehmonxona.Service.DTOs.Rooms;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,10 @@ namespace Mehmonxona.Service.Interfaces
 {
     public interface IPaymentService
     {
-        Task<Payment> CreateAsync(RoomForCreationDto roomForCreation);
-        Task<Payment> UpdateAsync(long id, RoomForCreationDto roomForCreation);
-        Task<Payment> DeleteAsync(Expression<Func<Payment, bool>> expressions);
-        Task<Payment> GetAsync(Expression<Func<Payment, bool>> expression);
-        Task<IEnumerable<Payment>> GetAllAsync(Expression<Func<Payment, bool>>? expression = null, Tuple<int, int>? pagination = null);
+        Task<PaymentForViewModel> CreateAsync(RoomForCreationDto roomForCreation);
+        Task<PaymentForViewModel> UpdateAsync(long id, RoomForCreationDto roomForCreation);
+        Task<PaymentForViewModel> DeleteAsync(Expression<Func<Payment, bool>> expressions);
+        Task<PaymentForViewModel> GetAsync(Expression<Func<Payment, bool>> expression);
+        Task<IEnumerable<PaymentForViewModel>> GetAllAsync(Expression<Func<Payment, bool>>? expression = null, Tuple<int, int>? pagination = null);
     }
 }

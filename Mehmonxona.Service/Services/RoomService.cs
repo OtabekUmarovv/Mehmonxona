@@ -5,6 +5,7 @@ using Mehmonxona.Data.Repositories;
 using Mehmonxona.Domain.Entities.Rooms;
 using Mehmonxona.Domain.Enums;
 using Mehmonxona.Service.DTOs.Rooms;
+using Mehmonxona.Service.Extensions;
 using Mehmonxona.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace Mehmonxona.Service.Services
 {
+#pragma warning disable CS1998
     public class RoomService : IRoomService
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -30,29 +32,65 @@ namespace Mehmonxona.Service.Services
             if (exist is not null && exist.State != ItemState.Deleted)
                 throw new Exception("Room allready exist!");
 
-            var newRoom = roomForCreation.Adapt<Room>(); 
+            var newRoom = roomForCreation.Adapt<Room>();
 
-            newRoo
+            newRoom.Create();
+            
+            newRoom = await _unitOfWork.Rooms.CreateAsync(newRoom);
+
+            await _unitOfWork.SaveChangesAsync();
+
+            return newRoom.Adapt<RoomForViewModel>();
         }
 
-        public Task<bool> DeleteAsync(Expression<Func<Room, bool>> expressions)
+        public async Task<bool> DeleteAsync(Expression<Func<Room, bool>> expression)
         {
-            throw new NotImplementedException();
+            var exist = await _unitOfWork.Rooms.GetAsync(expression);
+            
+            if(exist is null)
+                return false;
+
+            exist.Delete();
+
+            await _unitOfWork.SaveChangesAsync();
+            return true;
         }
 
-        public Task<IEnumerable<Room>> GetAllAsync(Expression<Func<Room, bool>> expression = null, Tuple<int, int> pagination = null)
+        public async Task<IEnumerable<RoomForViewModel>> GetAllAsync(Expression<Func<Room, bool>> expression = null, Tuple<int, int> pagination = null)
         {
-            throw new NotImplementedException();
+            var exist = _unitOfWork.Rooms.GetAll(expression)
+                .Where(p => p.State != ItemState.Deleted)
+                    .GetWithPagination<Room>(pagination);
+
+            return exist.Adapt<IEnumerable<RoomForViewModel>>();
         }
 
-        public Task<Room> GetAsync(Expression<Func<Room, bool>> expression)
+        public async Task<RoomForViewModel> GetAsync(Expression<Func<Room, bool>> expression)
         {
-            throw new NotImplementedException();
+            var exist = await _unitOfWork.Rooms.GetAsync(expression);
+
+            if (exist is null || exist.State == ItemState.Deleted)
+                throw new Exception("Room not found!");
+
+            return exist.Adapt<RoomForViewModel>();
         }
 
-        public Task<Room> UpdateAsync(long id, RoomForCreationDto roomForCreation)
+        public async Task<RoomForViewModel> UpdateAsync(long id, RoomForCreationDto roomForCreation)
         {
-            throw new NotImplementedException();
+            var exist = await _unitOfWork.Rooms.GetAsync(p => p.Id == id);
+
+            if (exist is null || exist.State == ItemState.Deleted)
+                throw new Exception("Room not found!");
+
+            var newRoom = roomForCreation.Adapt<Room>();
+
+            newRoom.Update();
+
+            newRoom = _unitOfWork.Rooms.Update(newRoom);
+
+            await _unitOfWork.SaveChangesAsync();
+
+            return newRoom.Adapt<RoomForViewModel>();
         }
     }
 }

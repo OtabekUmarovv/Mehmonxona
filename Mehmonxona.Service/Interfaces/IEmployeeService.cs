@@ -11,10 +11,10 @@ namespace Mehmonxona.Service.Interfaces
 {
     public interface IEmployeeService
     {
-        Task<Employee> CreateAsync(EmployeeForCreationDto roomForCreation);
-        Task<Employee> UpdateAsync(long id, EmployeeForCreationDto roomForCreation);
+        Task<EmployeeForViewModel> CreateAsync(EmployeeForCreationDto roomForCreation);
+        Task<EmployeeForViewModel> UpdateAsync(long id, EmployeeForCreationDto roomForCreation);
         Task<bool> DeleteAsync(Expression<Func<Employee, bool>> expressions);
-        Task<Employee> GetAsync(Expression<Func<Employee, bool>> expression);
-        Task<IEnumerable<Employee>> GetAllAsync(Expression<Func<Employee, bool>>? expression = null, Tuple<int, int>? pagination = null);
+        Task<EmployeeForViewModel> GetAsync(Expression<Func<Employee, bool>> expression);
+        Task<IEnumerable<EmployeeForViewModel>> GetAllAsync(Expression<Func<Employee, bool>>? expression = null, Tuple<int, int>? pagination = null);
     }
 }

@@ -13,6 +13,5 @@ namespace Mehmonxona.Data.IRepositories
         Task<TEntity?> GetAsync(Expression<Func<TEntity, bool>> expression);
         TEntity Update(TEntity entity);
         IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> expression);
-        Task SaveChangesAsync();
     }
 }
