@@ -10,6 +10,10 @@ namespace Mehmonxona.Domain.Entities.Employees
 {
     public class Employee : Auditable
     {
+        public Employee()
+        {
+            this.Orders = new List<Order>();
+        }
         [MaxLength(64)]
         public string FirstName { get; set; }
         [MaxLength(64)]

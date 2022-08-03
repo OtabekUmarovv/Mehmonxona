@@ -42,7 +42,7 @@ namespace Mehmonxona.Data.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
@@ -56,9 +56,6 @@ namespace Mehmonxona.Data.Migrations
                         .HasColumnType("character varying(64)");
 
                     b.Property<int>("Gender")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("ItemState")
                         .HasColumnType("integer");
 
                     b.Property<string>("LastName")
@@ -75,6 +72,9 @@ namespace Mehmonxona.Data.Migrations
                     b.Property<string>("Phone")
                         .HasMaxLength(16)
                         .HasColumnType("character varying(16)");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
@@ -101,12 +101,12 @@ namespace Mehmonxona.Data.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<int>("ItemState")
+                    b.Property<int>("State")
                         .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -129,19 +129,19 @@ namespace Mehmonxona.Data.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
-
-                    b.Property<int>("ItemState")
-                        .HasColumnType("integer");
 
                     b.Property<long?>("RoomId")
                         .HasColumnType("bigint");
 
                     b.Property<long>("Room_id")
                         .HasColumnType("bigint");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("Time")
                         .HasColumnType("timestamp without time zone");
@@ -167,7 +167,7 @@ namespace Mehmonxona.Data.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
@@ -175,7 +175,7 @@ namespace Mehmonxona.Data.Migrations
                     b.Property<long>("EmployeeId")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("ItemState")
+                    b.Property<int>("State")
                         .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -205,7 +205,7 @@ namespace Mehmonxona.Data.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("timestamp without time zone");
@@ -227,9 +227,6 @@ namespace Mehmonxona.Data.Migrations
                     b.Property<int>("Gender")
                         .HasColumnType("integer");
 
-                    b.Property<int>("ItemState")
-                        .HasColumnType("integer");
-
                     b.Property<string>("LastName")
                         .HasMaxLength(64)
                         .HasColumnType("character varying(64)");
@@ -247,6 +244,9 @@ namespace Mehmonxona.Data.Migrations
 
                     b.Property<decimal>("Salary")
                         .HasColumnType("numeric");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
@@ -269,7 +269,7 @@ namespace Mehmonxona.Data.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
@@ -277,14 +277,14 @@ namespace Mehmonxona.Data.Migrations
                     b.Property<long>("EmployeeId")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("ItemState")
-                        .HasColumnType("integer");
-
                     b.Property<long>("PaymentId")
                         .HasColumnType("bigint");
 
                     b.Property<long>("RoomId")
                         .HasColumnType("bigint");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
@@ -313,16 +313,16 @@ namespace Mehmonxona.Data.Migrations
                         .HasColumnType("numeric");
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<int>("ItemState")
-                        .HasColumnType("integer");
-
                     b.Property<long>("OrderId")
                         .HasColumnType("bigint");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<int>("Type")
                         .HasColumnType("integer");
@@ -345,16 +345,17 @@ namespace Mehmonxona.Data.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp without time zone").HasDefaultValue(DateTime.UtcNow);
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<int>("ItemState")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Sign")
-                        .HasColumnType("text");
+                        .HasMaxLength(64)
+                        .HasColumnType("character varying(64)");
+
+                    b.Property<int>("State")
+                        .HasColumnType("integer");
 
                     b.Property<int>("Status")
                         .HasColumnType("integer");

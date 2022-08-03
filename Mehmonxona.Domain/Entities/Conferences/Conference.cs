@@ -9,6 +9,11 @@ namespace Mehmonxona.Domain.Entities.Conferences
 {
     public class Conference : Auditable
     {
+        public Conference()
+        {
+            this.Clients = new List<Client>();
+            this.Employees = new List<Employee>();
+        }
         public DateTime Time { get; set; }
         public long Room_id { get; set; }
         public Room Room { get; set; }

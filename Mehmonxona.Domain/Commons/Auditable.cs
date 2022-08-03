@@ -9,23 +9,23 @@ namespace Mehmonxona.Domain.Commons
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
-        public ItemState ItemState { get; set; }
+        public ItemState State { get; set; }
 
 
-        public void Created()
+        public void Create()
         {
             CreatedAt = DateTime.UtcNow;
-            ItemState = ItemState.Created;
+            State = ItemState.Created;
         }
-        public void Updated()
+        public void Update()
         {
             UpdatedAt = DateTime.UtcNow;
-            ItemState = ItemState.Updated;
+            State = ItemState.Updated;
         }
-        public void Deleted()
+        public void Delete()
         {
             DeletedAt = DateTime.UtcNow;
-            ItemState = ItemState.Deleted;
+            State = ItemState.Deleted;
         }
     }
 }

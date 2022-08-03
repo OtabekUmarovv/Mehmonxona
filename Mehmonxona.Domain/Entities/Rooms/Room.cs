@@ -7,9 +7,9 @@ namespace Mehmonxona.Domain.Entities.Rooms
 {
     public class Room : Auditable
     {
-        [Required, MaxLength(64)]
+        [MaxLength(64)]
         public string Sign { get; set; }
         public RoomType Type { get; set; }
-        public RoomStatus Status { get; set; }
+        public RoomStatus Status { get; set; } = RoomStatus.Free;
     }
 }

@@ -12,6 +12,8 @@ namespace Mehmonxona.Domain.Entities.Conferences
         public Employee Employee { get; set; }
 
         public long ConferenceId { get; set; }
+
+        [ForeignKey("ConferenceId")]
         public Conference Conference { get; set; }
 
     }

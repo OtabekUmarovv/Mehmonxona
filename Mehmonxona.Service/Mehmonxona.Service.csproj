@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Mappers\" />
-    <Folder Include="Services\" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Mapster" Version="5.3.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Mehmonxona.Data\Mehmonxona.Data.csproj" />
     <ProjectReference Include="..\Mehmonxona.Domain\Mehmonxona.Domain.csproj" />
   </ItemGroup>
 
