@@ -1,4 +1,5 @@
-﻿using Mehmonxona.Data.IRepositories;
+﻿using Mehmonxona.Data.Contexts;
+using Mehmonxona.Data.IRepositories;
 using Mehmonxona.Domain.Entities.Conferences;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace Mehmonxona.Data.Repositories
 {
-    public class EmployeeConferenceRepository : GenericRepository<EmployeeConference>, IEmployeeRepository
+    public class EmployeeConferenceRepository : GenericRepository<EmployeeConference>, IEmployeeConferenceRepository
     {
+        public EmployeeConferenceRepository(MehmonxonaDbContext dbContext) : base(dbContext)
+        {
+        }
     }
 }

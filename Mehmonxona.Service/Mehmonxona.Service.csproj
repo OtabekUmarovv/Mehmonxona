@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mehmonxona.Data\Mehmonxona.Data.csproj" />
     <ProjectReference Include="..\Mehmonxona.Domain\Mehmonxona.Domain.csproj" />
   </ItemGroup>
 

@@ -14,9 +14,9 @@ namespace Mehmonxona.Data.Repositories
         protected readonly  MehmonxonaDbContext _context;
         protected readonly DbSet<TEntity> _dbSet;
 
-        public GenericRepository()
+        public GenericRepository(MehmonxonaDbContext dbContext)
         {
-            this._context = new MehmonxonaDbContext();
+            this._context = dbContext;
             this._dbSet = _context.Set<TEntity>();
         }
 

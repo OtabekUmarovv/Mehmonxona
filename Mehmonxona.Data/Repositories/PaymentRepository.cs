@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Mehmonxona.Data.Repositories
 {
-    public class OrderRepository : GenericRepository<Order>, IOrderRepository
+    public class PaymentRepository : GenericRepository<Payment>, IPaymentRepository
     {
-        public OrderRepository(MehmonxonaDbContext dbContext) : base(dbContext)
+        public PaymentRepository(MehmonxonaDbContext dbContext) : base(dbContext)
         {
         }
     }

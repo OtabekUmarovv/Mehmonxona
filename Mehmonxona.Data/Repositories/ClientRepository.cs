@@ -1,4 +1,5 @@
-﻿using Mehmonxona.Data.IRepositories;
+﻿using Mehmonxona.Data.Contexts;
+using Mehmonxona.Data.IRepositories;
 using Mehmonxona.Domain.Entities.Clients;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,8 @@ namespace Mehmonxona.Data.Repositories
 {
     public class ClientRepository : GenericRepository<Client>, IClientRepository
     {
+        public ClientRepository(MehmonxonaDbContext dbContext) : base(dbContext)
+        {
+        }
     }
 }

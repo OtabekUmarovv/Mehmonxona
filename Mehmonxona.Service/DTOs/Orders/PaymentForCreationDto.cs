@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Mehmonxona.Service.DTOs.Orders
 {
-    public class Payment
+    public class PaymentForCreationDto
     {
         [Required]
         public PaymentType Type { get; set; }

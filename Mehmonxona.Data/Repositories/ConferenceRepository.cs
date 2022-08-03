@@ -1,4 +1,5 @@
-﻿using Mehmonxona.Data.IRepositories;
+﻿using Mehmonxona.Data.Contexts;
+using Mehmonxona.Data.IRepositories;
 using Mehmonxona.Domain.Entities.Conferences;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,8 @@ namespace Mehmonxona.Data.Repositories
 {
     public class ConferenceRepository : GenericRepository<Conference>, IConferenceRepository
     {
+        public ConferenceRepository(MehmonxonaDbContext dbContext) : base(dbContext)
+        {
+        }
     }
 }
