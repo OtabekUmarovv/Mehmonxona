@@ -14,6 +14,7 @@ namespace Mehmonxona.Domain.Entities.Conferences
             this.Clients = new List<Client>();
             this.Employees = new List<Employee>();
         }
+        public string Name { get; set; }
         public DateTime Time { get; set; }
         public long Room_id { get; set; }
         public Room Room { get; set; }

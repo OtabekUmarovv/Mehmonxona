@@ -6,6 +6,9 @@ namespace Mehmonxona.Service.DTOs.Conferences
     public class ConferenceForCreationDto
     {
         [Required]
+        public string Name { get; set; }
+        
+        [Required]
         public DateTime Time { get; set; }
 
         [Required]

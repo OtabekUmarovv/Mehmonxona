@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\otaxo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\otaxo\\.nuget\\packages"
+      "C:\\Users\\shakh\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\shakh\\.nuget\\packages"
     ]
   }
 }
