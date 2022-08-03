@@ -12,17 +12,17 @@ namespace Mehmonxona.Domain.Commons
         public ItemState State { get; set; }
 
 
-        public void Created()
+        public void Create()
         {
             CreatedAt = DateTime.UtcNow;
             State = ItemState.Created;
         }
-        public void Updated()
+        public void Update()
         {
             UpdatedAt = DateTime.UtcNow;
             State = ItemState.Updated;
         }
-        public void Deleted()
+        public void Delete()
         {
             DeletedAt = DateTime.UtcNow;
             State = ItemState.Deleted;

@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+﻿using Mapster;
 using Mehmonxona.Data.Contexts;
 using Mehmonxona.Data.IRepositories;
 using Mehmonxona.Data.Repositories;
@@ -6,7 +6,6 @@ using Mehmonxona.Domain.Entities.Rooms;
 using Mehmonxona.Domain.Enums;
 using Mehmonxona.Service.DTOs.Rooms;
 using Mehmonxona.Service.Interfaces;
-using Mehmonxona.Service.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,27 +17,22 @@ namespace Mehmonxona.Service.Services
 {
     public class RoomService : IRoomService
     {
-        private readonly IMapper _mapper;
-        private readonly IUnitOfWork _uniOfWork;
-
+        private readonly IUnitOfWork _unitOfWork;
         public RoomService(MehmonxonaDbContext dbContext)
         {
-            _uniOfWork = new UnitOfWork(dbContext);
-
-            this._mapper = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<MappingProfile>();
-            }).CreateMapper();
+            _unitOfWork = new UnitOfWork(dbContext);
         }
 
-        public async Task<Room> CreateAsync(RoomForCreationDto roomForCreation)
+        public async Task<RoomForViewModel> CreateAsync(RoomForCreationDto roomForCreation)
         {
-            var exist = await _uniOfWork.Rooms.GetAsync(p => p.Sign == roomForCreation.Sign && p.State != ItemState.Deleted);
+            var exist = await _unitOfWork.Rooms.GetAsync(p => p.Sign == roomForCreation.Sign);
 
-            if (exist is null)
-                throw new Exception("Room already exist!");
+            if (exist is not null && exist.State != ItemState.Deleted)
+                throw new Exception("Room allready exist!");
 
-            return null;
+            var newRoom = roomForCreation.Adapt<Room>(); 
+
+            newRoo
         }
 
         public Task<bool> DeleteAsync(Expression<Func<Room, bool>> expressions)
