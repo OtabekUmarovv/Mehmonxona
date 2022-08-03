@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Data", "Mehmonxo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Domain", "Mehmonxona.Domain\Mehmonxona.Domain.csproj", "{BAE7A81C-F934-4046-B8B3-1931D1A2B3B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mehmonxona.Service", "Mehmonxona.Service\Mehmonxona.Service.csproj", "{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mehmonxona.Service", "Mehmonxona.Service\Mehmonxona.Service.csproj", "{CEE8719F-7D69-4A15-9256-8976DA57BA36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{BAE7A81C-F934-4046-B8B3-1931D1A2B3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE7A81C-F934-4046-B8B3-1931D1A2B3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE7A81C-F934-4046-B8B3-1931D1A2B3B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF1FD8CC-0EE2-480F-8682-F6E711C8E2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE8719F-7D69-4A15-9256-8976DA57BA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE8719F-7D69-4A15-9256-8976DA57BA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE8719F-7D69-4A15-9256-8976DA57BA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE8719F-7D69-4A15-9256-8976DA57BA36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

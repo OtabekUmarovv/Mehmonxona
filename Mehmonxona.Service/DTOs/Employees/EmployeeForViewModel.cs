@@ -1,11 +1,16 @@
-﻿
-using Mehmonxona.Domain.Enums;
+﻿using Mehmonxona.Domain.Enums;
+using Mehmonxona.Service.DTOs.Orders;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Mehmonxona.Service.DTOs.Employees
 {
-    public class EmployeeForCreation
+    public class EmployeeForViewModel
     {
+        public long Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Phone { get; set; }
@@ -17,5 +22,6 @@ namespace Mehmonxona.Service.DTOs.Employees
         public string Password { get; set; }
         public DateTime DateOfBirth { get; set; }
         public Department Department { get; set; }
+        public ICollection<OrderForViewModel> Orders { get; set; }
     }
 }
