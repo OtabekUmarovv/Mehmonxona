@@ -15,6 +15,7 @@ using Mehmonxona.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -72,7 +73,7 @@ namespace Mehmonxona.Service.Services
         {
             var exist = _unitOfWork.Conferences.GetAll(expression)
                 .Where(p => p.State != ItemState.Deleted)
-                    .GetWithPagination<Conference>(pagination);
+                    .GetWithPagination(pagination);
 
             return exist.Adapt<IEnumerable<ConferenceForViewModel>>(config);
         }

@@ -59,7 +59,7 @@ namespace Mehmonxona.Service.Services
         {
             var exist = _unitOfWork.Rooms.GetAll(expression)
                 .Where(p => p.State != ItemState.Deleted)
-                    .GetWithPagination<Room>(pagination);
+                    .GetWithPagination(pagination);
 
             return exist.Adapt<IEnumerable<RoomForViewModel>>();
         }
