@@ -9,6 +9,11 @@ namespace Mehmonxona.Domain.Entities.Clients
 {
     public class Client : Auditable
     {
+        public Client()
+        {
+            this.Conferences = new List<Conference>();
+            this.Orders = new List<Order>();
+        }
         [MaxLength(64)]
         public string FirstName { get; set; }
         [MaxLength(64)]

@@ -10,5 +10,6 @@ namespace Mehmonxona.Data.Repositories
 {
     public class ClientConferenceRepository : GenericRepository<ClientConference>, IClientConferenceRepository
     {
+
     }
 }

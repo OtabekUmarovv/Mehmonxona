@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Mehmonxona.Service.DTOs.Conferences
 {
-    public class CanferenceForCreationDto
+    public class ConferenceForCreationDto
     {
         [Required]
         public DateTime Time { get; set; }
