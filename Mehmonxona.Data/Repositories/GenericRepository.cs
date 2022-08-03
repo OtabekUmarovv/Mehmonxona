@@ -11,7 +11,7 @@ namespace Mehmonxona.Data.Repositories
 {
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        protected readonly  MehmonxonaDbContext _context;
+        protected readonly MehmonxonaDbContext _context;
         protected readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository(MehmonxonaDbContext dbContext)

@@ -11,7 +11,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Mehmonxona.Service.Services
@@ -35,7 +34,7 @@ namespace Mehmonxona.Service.Services
             var newRoom = roomForCreation.Adapt<Room>();
 
             newRoom.Create();
-            
+
             newRoom = await _unitOfWork.Rooms.CreateAsync(newRoom);
 
             await _unitOfWork.SaveChangesAsync();
@@ -46,8 +45,8 @@ namespace Mehmonxona.Service.Services
         public async Task<bool> DeleteAsync(Expression<Func<Room, bool>> expression)
         {
             var exist = await _unitOfWork.Rooms.GetAsync(expression);
-            
-            if(exist is null)
+
+            if (exist is null)
                 return false;
 
             exist.Delete();
