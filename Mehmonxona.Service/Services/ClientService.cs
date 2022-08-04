@@ -32,16 +32,19 @@ namespace Mehmonxona.Service.Services
                 .Map(dest => dest.Orders, src => src.Adapt<IEnumerable<OrderForViewModel>>());
 
         }
-        public async Task<ClientForViewModel> CreateAsync(ClientForCreationDto ClientForCreation)
+        public async Task<ClientForViewModel> CreateAsync(ClientForCreationDto clientForCreation)
         {
-            var exist = await _unitOfWork.Clients.GetAsync(p => p.Email == ClientForCreation.Email);
+            var exist = await _unitOfWork.Clients.GetAsync(p => p.Email == clientForCreation.Email);
 
             if (exist is not null && exist.State != ItemState.Deleted)
                 throw new Exception("Client allready exist!");
 
-            var newClient = ClientForCreation.Adapt<Client>();
+            clientForCreation.Password = clientForCreation.Password.HashPassword();
 
+            var newClient = clientForCreation.Adapt<Client>();
+            
             newClient.Create();
+            
 
             newClient = await _unitOfWork.Clients.CreateAsync(newClient);
 
@@ -83,14 +86,14 @@ namespace Mehmonxona.Service.Services
             return exist.Adapt<ClientForViewModel>(config);
         }
 
-        public async Task<ClientForViewModel> UpdateAsync(long id, ClientForCreationDto ClientForCreation)
+        public async Task<ClientForViewModel> UpdateAsync(long id, ClientForCreationDto clientForCreation)
         {
             var exist = await _unitOfWork.Clients.GetAsync(p => p.Id == id);
 
             if (exist is null || exist.State == ItemState.Deleted)
                 throw new Exception("Client not found!");
 
-            var newClient = ClientForCreation.Adapt<Client>();
+            var newClient = clientForCreation.Adapt(exist);
 
             newClient.Update();
 

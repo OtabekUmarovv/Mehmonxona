@@ -81,15 +81,15 @@ namespace Mehmonxona.Service.Services
             if (exist is null || exist.State == ItemState.Deleted)
                 throw new Exception("Room not found!");
 
-            var newRoom = roomForCreation.Adapt<Room>();
+            exist = roomForCreation.Adapt(exist);
 
-            newRoom.Update();
+            exist.Update();
 
-            newRoom = _unitOfWork.Rooms.Update(newRoom);
+            exist = _unitOfWork.Rooms.Update(exist);
 
             await _unitOfWork.SaveChangesAsync();
 
-            return newRoom.Adapt<RoomForViewModel>();
+            return exist.Adapt<RoomForViewModel>();
         }
     }
 }

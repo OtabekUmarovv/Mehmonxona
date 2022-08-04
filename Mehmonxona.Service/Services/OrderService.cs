@@ -94,7 +94,7 @@ namespace Mehmonxona.Service.Services
             if (exist is null || exist.State == ItemState.Deleted)
                 throw new Exception("Order not found!");
 
-            var newOrder = orderForCreation.Adapt<Order>();
+            var newOrder = orderForCreation.Adapt(exist);
 
             newOrder.Update();
 

@@ -86,15 +86,15 @@ namespace Mehmonxona.Service.Services
             if (exist is null || exist.State == ItemState.Deleted)
                 throw new Exception("Payment not found!");
 
-            var newPayment = paymentForCreation.Adapt<Payment>();
+            exist = paymentForCreation.Adapt(exist);
 
-            newPayment.Update();
+            exist.Update();
 
-            newPayment = _unitOfWork.Payments.Update(newPayment);
+            exist = _unitOfWork.Payments.Update(exist);
 
             await _unitOfWork.SaveChangesAsync();
 
-            return newPayment.Adapt<PaymentForViewModel>();
+            return exist.Adapt<PaymentForViewModel>();
         }
     }
 }

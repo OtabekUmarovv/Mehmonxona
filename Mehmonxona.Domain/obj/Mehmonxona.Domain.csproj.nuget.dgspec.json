@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {}
+    "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+    "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
         "projectName": "Mehmonxona.Domain",
-        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
+        "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
         "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\obj\\",
         "projectStyle": "PackageReference",

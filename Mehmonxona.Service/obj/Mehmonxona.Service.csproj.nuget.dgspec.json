@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {}
+    "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
+    "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
         "projectName": "Mehmonxona.Data",
-        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
+        "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj",
         "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\obj\\",
+        "outputPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
-                "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
+              "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+                "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
               }
             }
           }
@@ -78,12 +78,12 @@
         }
       }
     },
-    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+    "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
         "projectName": "Mehmonxona.Domain",
-        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
+        "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj",
         "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -132,14 +132,14 @@
         }
       }
     },
-    "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {
+    "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
+        "projectUniqueName": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
         "projectName": "Mehmonxona.Service",
-        "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
+        "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Service\\Mehmonxona.Service.csproj",
         "packagesPath": "C:\\Users\\otaxo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Service\\obj\\",
+        "outputPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\otaxo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,11 +156,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
-                "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj"
+              "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj": {
+                "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Data\\Mehmonxona.Data.csproj"
               },
-              "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
-                "projectPath": "C:\\Users\\otaxo\\Source\\Repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
+              "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj": {
+                "projectPath": "C:\\Users\\otaxo\\source\\repos\\Mehmonxona\\Mehmonxona.Domain\\Mehmonxona.Domain.csproj"
               }
             }
           }

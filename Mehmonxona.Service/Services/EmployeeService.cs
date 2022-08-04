@@ -30,14 +30,16 @@ namespace Mehmonxona.Service.Services
                 .Map(dest => dest.Orders, src => src.Adapt<IEnumerable<OrderForViewModel>>());
 
         }
-        public async Task<EmployeeForViewModel> CreateAsync(EmployeeForCreationDto EmployeeForCreation)
+        public async Task<EmployeeForViewModel> CreateAsync(EmployeeForCreationDto employeeForCreation)
         {
-            var exist = await _unitOfWork.Employees.GetAsync(p => p.Email == EmployeeForCreation.Email);
+            var exist = await _unitOfWork.Employees.GetAsync(p => p.Email == employeeForCreation.Email);
 
             if (exist is not null && exist.State != ItemState.Deleted)
                 throw new Exception("Employee allready exist!");
 
-            var newEmployee = EmployeeForCreation.Adapt<Employee>();
+            employeeForCreation.Password = employeeForCreation.Password.HashPassword();
+
+            var newEmployee = employeeForCreation.Adapt<Employee>();
 
             newEmployee.Create();
 
@@ -88,7 +90,7 @@ namespace Mehmonxona.Service.Services
             if (exist is null || exist.State == ItemState.Deleted)
                 throw new Exception("Employee not found!");
 
-            var newEmployee = EmployeeForCreation.Adapt<Employee>();
+            var newEmployee = EmployeeForCreation.Adapt(exist);
 
             newEmployee.Update();
 

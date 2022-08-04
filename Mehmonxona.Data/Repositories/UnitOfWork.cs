@@ -23,7 +23,7 @@ namespace Mehmonxona.Data.Repositories
 
         public IClientConferenceRepository ClientConferences { get; }
 
-        private readonly MehmonxonaDbContext _dbContext;
+        public MehmonxonaDbContext _dbContext { get; set; }
 
         public UnitOfWork(MehmonxonaDbContext dbContext)
         {
@@ -35,6 +35,7 @@ namespace Mehmonxona.Data.Repositories
             this.Payments = new PaymentRepository(dbContext);
             this.ClientConferences = new ClientConferenceRepository(dbContext);
             this.EmployeeConferences = new EmployeeConferenceRepository(dbContext);
+            _dbContext = dbContext;
         }
 
         public void Dispose()

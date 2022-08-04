@@ -37,14 +37,14 @@ namespace Mehmonxona.Service.Services
                 .Map(dest => dest.Employees, src => src.Adapt<ICollection<EmployeeForViewModel>>());
                 
         }
-        public async Task<ConferenceForViewModel> CreateAsync(ConferenceForCreationDto ConferenceForCreation)
+        public async Task<ConferenceForViewModel> CreateAsync(ConferenceForCreationDto conferenceForCreation)
         {
-            var exist = await _unitOfWork.Conferences.GetAsync(p => p.Name == ConferenceForCreation.Name);
+            var exist = await _unitOfWork.Conferences.GetAsync(p => p.Name == conferenceForCreation.Name);
 
             if (exist is not null && exist.State != ItemState.Deleted)
                 throw new Exception("Conference allready exist!");
 
-            var newConference = ConferenceForCreation.Adapt<Conference>();
+            var newConference = conferenceForCreation.Adapt<Conference>();
 
             newConference.Create();
 
@@ -88,14 +88,14 @@ namespace Mehmonxona.Service.Services
             return exist.Adapt<ConferenceForViewModel>(config);
         }
 
-        public async Task<ConferenceForViewModel> UpdateAsync(long id, ConferenceForCreationDto ConferenceForCreation)
+        public async Task<ConferenceForViewModel> UpdateAsync(long id, ConferenceForCreationDto conferenceForCreation)
         {
             var exist = await _unitOfWork.Conferences.GetAsync(p => p.Id == id);
 
             if (exist is null || exist.State == ItemState.Deleted)
                 throw new Exception("Conference not found!");
 
-            var newConference = ConferenceForCreation.Adapt<Conference>();
+            var newConference = conferenceForCreation.Adapt(exist);
 
             newConference.Update();
 
