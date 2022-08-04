@@ -7,6 +7,11 @@ namespace Mehmonxona.Service.DTOs.Clients
 {
     public class ClientForViewModel
     {
+        public ClientForViewModel()
+        {
+            Conferences = new List<ConferenceForViewModel>();
+            Orders = new List<OrderForViewModel>();
+        }
         public long Id { get; set; }
         public string FirstName { get; set; }
 

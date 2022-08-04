@@ -9,6 +9,7 @@ using Mehmonxona.Service.DTOs.Conferences;
 using Mehmonxona.Service.DTOs.Orders;
 using Mehmonxona.Service.Extensions;
 using Mehmonxona.Service.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,7 +72,8 @@ namespace Mehmonxona.Service.Services
         {
             var exist = _unitOfWork.Clients.GetAll(expression)
                 .Where(p => p.State != ItemState.Deleted)
-                    .GetWithPagination(pagination);
+                    .Include("Orders")
+                        .GetWithPagination(pagination);
 
             return exist.Adapt<IEnumerable<ClientForViewModel>>(config);
         }
