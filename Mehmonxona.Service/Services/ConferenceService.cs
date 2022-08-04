@@ -72,10 +72,14 @@ namespace Mehmonxona.Service.Services
                 Tuple<int, int> pagination = null)
         {
             var exist = _unitOfWork.Conferences.GetAll(expression)
-                .Where(p => p.State != ItemState.Deleted)
-                    .GetWithPagination(pagination);
-
-            return exist.Adapt<IEnumerable<ConferenceForViewModel>>(config);
+                .Include(confer => confer.Clients)
+                    .Include(confer => confer.Employees)
+                        .Include(confer => confer.Room)
+                            .Where(p => p.State != ItemState.Deleted)
+                                .GetWithPagination(pagination)
+                                    .Adapt<IEnumerable<ConferenceForViewModel>>(config);
+            
+            return exist;
         }
 
         public async Task<ConferenceForViewModel> GetAsync(Expression<Func<Conference, bool>> expression)

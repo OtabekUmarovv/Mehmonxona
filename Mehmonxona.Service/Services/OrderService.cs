@@ -10,6 +10,7 @@ using Mehmonxona.Service.DTOs.Orders;
 using Mehmonxona.Service.DTOs.Rooms;
 using Mehmonxona.Service.Extensions;
 using Mehmonxona.Service.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,10 +72,12 @@ namespace Mehmonxona.Service.Services
                 Tuple<int, int> pagination = null)
         {
             var exist = _unitOfWork.Orders.GetAll(expression)
-                .Where(p => p.State != ItemState.Deleted)
-                    .GetWithPagination(pagination);
+                .Include(order => order.Payment)
+                    .Where(p => p.State != ItemState.Deleted)
+                        .GetWithPagination(pagination)
+                            .Adapt<IEnumerable<OrderForViewModel>>(config);
 
-            return exist.Adapt<IEnumerable<OrderForViewModel>>(config);
+            return exist;
         }
 
         public async Task<OrderForViewModel> GetAsync(Expression<Func<Order, bool>> expression)
