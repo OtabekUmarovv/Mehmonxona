@@ -1,7 +1,4 @@
 ﻿using Mehmonxona.Data.Contexts;
-using Mehmonxona.Domain.Enums;
-using Mehmonxona.Service.DTOs.Clients;
-using Mehmonxona.Service.DTOs.Rooms;
 using Mehmonxona.Service.Services;
 using System;
 using System.Linq;
@@ -17,9 +14,9 @@ namespace Mehmonxona.Tests
 
             var roomService = new RoomService(context);
             var clientService = new ClientService(context);
-            
+
             //create
-            
+
 
             //var room1 = new RoomForCreationDto()
             //{
@@ -54,7 +51,7 @@ namespace Mehmonxona.Tests
 
             //await clientService.CreateAsync(user);
             var clients = (await clientService.GetAllAsync()).ToList();
-            foreach(var client in clients)
+            foreach (var client in clients)
                 Console.WriteLine(client.FirstName);
         }
     }

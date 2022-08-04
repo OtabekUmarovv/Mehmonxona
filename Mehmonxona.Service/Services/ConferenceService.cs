@@ -3,8 +3,6 @@ using Mehmonxona.Data.Contexts;
 using Mehmonxona.Data.IRepositories;
 using Mehmonxona.Data.Repositories;
 using Mehmonxona.Domain.Entities.Conferences;
-using Mehmonxona.Domain.Entities.Employees;
-using Mehmonxona.Domain.Entities.Rooms;
 using Mehmonxona.Domain.Enums;
 using Mehmonxona.Service.DTOs.Clients;
 using Mehmonxona.Service.DTOs.Conferences;
@@ -25,7 +23,7 @@ namespace Mehmonxona.Service.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly TypeAdapterConfig config;
-        
+
         public ConferenceService(MehmonxonaDbContext dbContext)
         {
             _unitOfWork = new UnitOfWork(dbContext);
@@ -35,7 +33,7 @@ namespace Mehmonxona.Service.Services
                 .Map(dest => dest.Room, src => src.Adapt<RoomForViewModel>())
                 .Map(dest => dest.Clients, src => src.Adapt<IEnumerable<ClientForViewModel>>())
                 .Map(dest => dest.Employees, src => src.Adapt<ICollection<EmployeeForViewModel>>());
-                
+
         }
         public async Task<ConferenceForViewModel> CreateAsync(ConferenceForCreationDto conferenceForCreation)
         {
@@ -68,7 +66,7 @@ namespace Mehmonxona.Service.Services
             return true;
         }
 
-        public async Task<IEnumerable<ConferenceForViewModel>> GetAllAsync(Expression<Func<Conference, bool>> expression = null, 
+        public async Task<IEnumerable<ConferenceForViewModel>> GetAllAsync(Expression<Func<Conference, bool>> expression = null,
                 Tuple<int, int> pagination = null)
         {
             var exist = _unitOfWork.Conferences.GetAll(expression)
@@ -78,7 +76,7 @@ namespace Mehmonxona.Service.Services
                             .Include(confer => confer.Room)
                                 .Where(p => p.State != ItemState.Deleted)
                                     .Adapt<IEnumerable<ConferenceForViewModel>>(config);
-            
+
             return exist;
         }
 
@@ -109,6 +107,6 @@ namespace Mehmonxona.Service.Services
 
             return newConference.Adapt<ConferenceForViewModel>(config);
         }
-        
+
     }
 }

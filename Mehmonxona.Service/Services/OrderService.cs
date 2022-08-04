@@ -5,7 +5,6 @@ using Mehmonxona.Data.Repositories;
 using Mehmonxona.Domain.Entities.Orders;
 using Mehmonxona.Domain.Enums;
 using Mehmonxona.Service.DTOs.Clients;
-using Mehmonxona.Service.DTOs.Conferences;
 using Mehmonxona.Service.DTOs.Orders;
 using Mehmonxona.Service.DTOs.Rooms;
 using Mehmonxona.Service.Extensions;
@@ -38,7 +37,7 @@ namespace Mehmonxona.Service.Services
         public async Task<OrderForViewModel> CreateAsync(OrderForCreationDto orderForCreation)
         {
             var exist = await _unitOfWork.Orders.GetAsync(
-                p => p.ClientId == orderForCreation.ClientId && 
+                p => p.ClientId == orderForCreation.ClientId &&
                     p.EmployeeId == orderForCreation.EmployeeId && p.RoomId == orderForCreation.RoomId);
 
             if (exist is not null && exist.State != ItemState.Deleted)

@@ -7,7 +7,7 @@ namespace Mehmonxona.Service.DTOs.Conferences
     {
         [Required]
         public string Name { get; set; }
-        
+
         [Required]
         public DateTime Time { get; set; }
 

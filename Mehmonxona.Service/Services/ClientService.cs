@@ -43,9 +43,9 @@ namespace Mehmonxona.Service.Services
             clientForCreation.Password = clientForCreation.Password.HashPassword();
 
             var newClient = clientForCreation.Adapt<Client>();
-            
+
             newClient.Create();
-            
+
 
             newClient = await _unitOfWork.Clients.CreateAsync(newClient);
 
